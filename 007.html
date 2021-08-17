@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <button type="button" onclick="test();"name="button">클릭!!</button>
+  <script>
+    // 함수는 어떤 기능 단위에 묶음.
+
+    function circle(r) {
+      let width = r*r*3.14;
+      return width; // return는 이함수가 있는 자리에 반환을 해주는 것이다.
+    }
+    document.write(circle(10));
+
+    function test(){
+      document.write('hello world!!');
+    }
+  </script>
+</body>
+</html>
