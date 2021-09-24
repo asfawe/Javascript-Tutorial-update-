@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>007-3.html</title>
+</head>
+<body>
+  <script>
+    //함수 순언문.
+    function sum(x, y){
+      return x + y;
+    }
+
+    //함수선 표현식
+    let sumXY = function(x,y){
+      return x + y;
+    };
+    // let x = 10;
+    let sumXYcopy = sumXY;
+
+    document.write(sumXY(10,20), '<br>');
+
+    //콜백 함수
+    function sum(x, y,c){
+      c(x + y);
+      return x + y;
+    }
+
+    function documentWrite(s) {
+      document.write('콜백함수', s);
+    }
+
+    sum(10,20, documentWrite)
+  </script>
+</body>
+</html>
